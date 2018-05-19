@@ -11,3 +11,6 @@
 3   用命令执行结果的两种方法
               1  $(要引用的命令)  -- $(date +'%Y-%m-%d')
               2  `要引用的命令`   --`date +'%Y-%m-%d'`  
+4   安装tree的步骤路径
+
+              rpm -ivh /media/CentOS_6.9_Final/Packages/tree-1.5.3-3.el6.x86_64.rpm 
