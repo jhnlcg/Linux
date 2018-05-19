@@ -14,3 +14,8 @@
 4   安装tree的步骤路径
 
               rpm -ivh /media/CentOS_6.9_Final/Packages/tree-1.5.3-3.el6.x86_64.rpm 
+5  定义别名
+
+     alias 别名=要输出的内容（示例）
+     
+        
