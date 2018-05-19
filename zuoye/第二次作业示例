@@ -1,0 +1,34 @@
+1、显示/etc目录下所有以k开头，以一个小写字母结尾，且中间出现至少一位数字的文件或目录
+
+                     ls /etc/k*[0-9]*[[lower]]
+
+2、显示/proc目录下名字由任意三位数字组成的文件或目录
+
+                     ls /proc/[0-9][0-9][0-9]
+                     
+3、显示/var/log目录下文件名包含符号及数字的文件或目录
+
+
+                      
+4、显示/usr/share/man目录下所有以m开头，以一个数字和x结尾的文件或目录
+
+                    ls/usr/share/man/m*[0-9]x
+                       
+5、显示/etc目录下，所有以一个大写字母开头，以两个数字结尾的文件或目录
+
+                     ls /etc/[[:upper]]*[0-9][0-9]    
+
+6、显示/etc目录下，文件名至少包含一个小写字母和一个数字并以.conf结尾的文件或目录
+
+                    ls /etc/[[[lower]][0-9]]*.conf
+   
+7、只显示用户家目录下的非隐藏目录1
+8、定义别名命令baketc，将/etc/目录下所有文件，备份到/testdir独立的子目录下，并要求
+子目录格式为 backupYYYY-mm-dd，备份过程可见
+9、创建/testdir/rootdir目录，并复制/root下所有文件到该目录内，要求保留原有权限
+10、使用一条命令创建/testdir/dir8/x, /testdir/dir8/y, /testdir/dir8/x/a, 
+/testdir/dir8/x/b, /testdir/dir8/x/c, /testdir/dir8/y/a, /testdir/dir8/y/b
+11、使用一条命令创建 /testdir/dir9/x, /testdir/dir10/y, /testdir/dir9/x/a, 
+/testdir/dir10/y/b
+12、使用一条命令创建/testdir/dir11, /testdir/dir12, /testdir/dir13, 
+/testdir/dir12/dir14, /testdir/dir13/dir15
