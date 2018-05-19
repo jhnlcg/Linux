@@ -16,6 +16,8 @@
               rpm -ivh /media/CentOS_6.9_Final/Packages/tree-1.5.3-3.el6.x86_64.rpm 
 5  定义别名
 
-     alias 别名=要输出的内容（示例）
+     定义别名命令baketc，将/etc/目录下所有文件，备份到/testdir独立的子目录下，并要求
+子目录格式为 backupYYYY-mm-dd，备份过程可见 （就是将A目录的复制到B里面去然后定义简写一键输出）
+                   alias backup=cp-rv /etc /testdir/back_`date +`%Y+%y+%d``
      
         
