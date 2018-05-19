@@ -25,7 +25,10 @@
 7、只显示用户家目录下的非隐藏目录1
 8、定义别名命令baketc，将/etc/目录下所有文件，备份到/testdir独立的子目录下，并要求
 子目录格式为 backupYYYY-mm-dd，备份过程可见
+                   alias backup=cp-rv /etc /testdir/back_`date +`%Y+%y+%d``
 9、创建/testdir/rootdir目录，并复制/root下所有文件到该目录内，要求保留原有权限
+                    cp -r --preserv=mode /root/* /testdir/rootdir/
+
 10、使用一条命令创建/testdir/dir8/x, /testdir/dir8/y, /testdir/dir8/x/a, 
 /testdir/dir8/x/b, /testdir/dir8/x/c, /testdir/dir8/y/a, /testdir/dir8/y/b
 11、使用一条命令创建 /testdir/dir9/x, /testdir/dir10/y, /testdir/dir9/x/a, 
